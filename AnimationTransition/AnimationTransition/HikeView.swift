@@ -15,11 +15,13 @@ extension AnyTransition {
     }
 }
 
-struct HikeView: View {
+public struct HikeView: View {
     var hike: Hike
     @State private var showDetail = true
-    
-    var body: some View {
+    public init(hike: Hike) {
+        self.hike = hike
+    }
+    public var body: some View {
         VStack {
             HStack {
                 HikeGraph(hike: hike, path: \.elevation)
@@ -48,7 +50,6 @@ struct HikeView: View {
 //                        .animation(.spring())
                 }
             }
-            Spacer().frame(height: 20)
             if showDetail {
                 HikeDetail(hike: hike)
                     .transition(.moveAndFade)

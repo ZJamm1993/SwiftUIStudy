@@ -16,10 +16,31 @@
 		1CD6D624240767AB008DAE16 /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6D622240767AA008DAE16 /* HikeDetail.swift */; };
 		1CD6D625240767AB008DAE16 /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6D623240767AB008DAE16 /* HikeView.swift */; };
 		1CD6D62824076813008DAE16 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6D62724076813008DAE16 /* Hike.swift */; };
-		1CD6D62A24076823008DAE16 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CD6D62924076823008DAE16 /* hikeData.json */; };
 		1CD6D62D24076906008DAE16 /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6D62B24076906008DAE16 /* GraphCapsule.swift */; };
 		1CD6D62E24076906008DAE16 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6D62C24076906008DAE16 /* HikeGraph.swift */; };
+		1CD6D6582409072C008DAE16 /* HikeUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CD6D6562409072C008DAE16 /* HikeUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CD6D66124090744008DAE16 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6D62724076813008DAE16 /* Hike.swift */; };
+		1CD6D66324090744008DAE16 /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6D622240767AA008DAE16 /* HikeDetail.swift */; };
+		1CD6D66424090744008DAE16 /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6D623240767AB008DAE16 /* HikeView.swift */; };
+		1CD6D66524090744008DAE16 /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6D62B24076906008DAE16 /* GraphCapsule.swift */; };
+		1CD6D66624090744008DAE16 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6D62C24076906008DAE16 /* HikeGraph.swift */; };
+		1CD6D667240907A3008DAE16 /* Hike.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1CD6D62724076813008DAE16 /* Hike.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CD6D669240907AF008DAE16 /* HikeView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1CD6D623240767AB008DAE16 /* HikeView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CD6D6EF24091F25008DAE16 /* Data.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1CD6D6EE24091F25008DAE16 /* Data.bundle */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1CD6D6D6240916D0008DAE16 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1CD6D60B24076776008DAE16 /* AnimationTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,13 +54,24 @@
 		1CD6D622240767AA008DAE16 /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		1CD6D623240767AB008DAE16 /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 		1CD6D62724076813008DAE16 /* Hike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
-		1CD6D62924076823008DAE16 /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		1CD6D62B24076906008DAE16 /* GraphCapsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
 		1CD6D62C24076906008DAE16 /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
+		1CD6D6542409072C008DAE16 /* HikeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HikeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD6D6562409072C008DAE16 /* HikeUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HikeUI.h; sourceTree = "<group>"; };
+		1CD6D6572409072C008DAE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CD6D6CE240916A6008DAE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CD6D6EE24091F25008DAE16 /* Data.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Data.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1CD6D60824076776008DAE16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD6D6512409072C008DAE16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,7 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				1CD6D60D24076776008DAE16 /* AnimationTransition */,
+				1CD6D6552409072C008DAE16 /* HikeUI */,
+				1CD6D6CD240916A6008DAE16 /* Data */,
 				1CD6D60C24076776008DAE16 /* Products */,
+				1CD6D6D2240916D0008DAE16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				1CD6D60B24076776008DAE16 /* AnimationTransition.app */,
+				1CD6D6542409072C008DAE16 /* HikeUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +104,7 @@
 		1CD6D60D24076776008DAE16 /* AnimationTransition */ = {
 			isa = PBXGroup;
 			children = (
+				1CD6D6EE24091F25008DAE16 /* Data.bundle */,
 				1CD6D6262407680A008DAE16 /* model */,
 				1CD6D60E24076776008DAE16 /* AppDelegate.swift */,
 				1CD6D61024076776008DAE16 /* SceneDelegate.swift */,
@@ -96,12 +133,48 @@
 			isa = PBXGroup;
 			children = (
 				1CD6D62724076813008DAE16 /* Hike.swift */,
-				1CD6D62924076823008DAE16 /* hikeData.json */,
 			);
 			path = model;
 			sourceTree = "<group>";
 		};
+		1CD6D6552409072C008DAE16 /* HikeUI */ = {
+			isa = PBXGroup;
+			children = (
+				1CD6D6562409072C008DAE16 /* HikeUI.h */,
+				1CD6D6572409072C008DAE16 /* Info.plist */,
+			);
+			path = HikeUI;
+			sourceTree = "<group>";
+		};
+		1CD6D6CD240916A6008DAE16 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1CD6D6CE240916A6008DAE16 /* Info.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1CD6D6D2240916D0008DAE16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1CD6D64F2409072C008DAE16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD6D6582409072C008DAE16 /* HikeUI.h in Headers */,
+				1CD6D667240907A3008DAE16 /* Hike.swift in Headers */,
+				1CD6D669240907AF008DAE16 /* HikeView.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1CD6D60A24076776008DAE16 /* AnimationTransition */ = {
@@ -111,6 +184,7 @@
 				1CD6D60724076776008DAE16 /* Sources */,
 				1CD6D60824076776008DAE16 /* Frameworks */,
 				1CD6D60924076776008DAE16 /* Resources */,
+				1CD6D6D6240916D0008DAE16 /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
@@ -120,6 +194,24 @@
 			productName = AnimationTransition;
 			productReference = 1CD6D60B24076776008DAE16 /* AnimationTransition.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1CD6D6532409072C008DAE16 /* HikeUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CD6D65D2409072C008DAE16 /* Build configuration list for PBXNativeTarget "HikeUI" */;
+			buildPhases = (
+				1CD6D64F2409072C008DAE16 /* Headers */,
+				1CD6D6502409072C008DAE16 /* Sources */,
+				1CD6D6512409072C008DAE16 /* Frameworks */,
+				1CD6D6522409072C008DAE16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HikeUI;
+			productName = HikeUI;
+			productReference = 1CD6D6542409072C008DAE16 /* HikeUI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -132,6 +224,9 @@
 				ORGANIZATIONNAME = zjj;
 				TargetAttributes = {
 					1CD6D60A24076776008DAE16 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					1CD6D6532409072C008DAE16 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -150,6 +245,7 @@
 			projectRoot = "";
 			targets = (
 				1CD6D60A24076776008DAE16 /* AnimationTransition */,
+				1CD6D6532409072C008DAE16 /* HikeUI */,
 			);
 		};
 /* End PBXProject section */
@@ -159,10 +255,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CD6D62A24076823008DAE16 /* hikeData.json in Resources */,
 				1CD6D61B24076777008DAE16 /* LaunchScreen.storyboard in Resources */,
 				1CD6D61824076777008DAE16 /* Preview Assets.xcassets in Resources */,
 				1CD6D61524076777008DAE16 /* Assets.xcassets in Resources */,
+				1CD6D6EF24091F25008DAE16 /* Data.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD6D6522409072C008DAE16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +284,18 @@
 				1CD6D62E24076906008DAE16 /* HikeGraph.swift in Sources */,
 				1CD6D624240767AB008DAE16 /* HikeDetail.swift in Sources */,
 				1CD6D62D24076906008DAE16 /* GraphCapsule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD6D6502409072C008DAE16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD6D66524090744008DAE16 /* GraphCapsule.swift in Sources */,
+				1CD6D66124090744008DAE16 /* Hike.swift in Sources */,
+				1CD6D66424090744008DAE16 /* HikeView.swift in Sources */,
+				1CD6D66624090744008DAE16 /* HikeGraph.swift in Sources */,
+				1CD6D66324090744008DAE16 /* HikeDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +465,58 @@
 			};
 			name = Release;
 		};
+		1CD6D65E2409072C008DAE16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HikeUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jam.studio.HikeUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1CD6D65F2409072C008DAE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HikeUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jam.studio.HikeUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -367,6 +534,15 @@
 			buildConfigurations = (
 				1CD6D62024076777008DAE16 /* Debug */,
 				1CD6D62124076777008DAE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CD6D65D2409072C008DAE16 /* Build configuration list for PBXNativeTarget "HikeUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD6D65E2409072C008DAE16 /* Debug */,
+				1CD6D65F2409072C008DAE16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

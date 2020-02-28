@@ -15,7 +15,37 @@
 		1C2CAAA82403D451004F6AE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C2CAAA62403D451004F6AE0 /* LaunchScreen.storyboard */; };
 		1C2CAAB02403D652004F6AE0 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2CAAAF2403D652004F6AE0 /* Badge.swift */; };
 		1C2CAAB22403D7F0004F6AE0 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2CAAB12403D7F0004F6AE0 /* HexagonParameters.swift */; };
+		1CD6D6A824090D8D008DAE16 /* BadgeUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CD6D6A624090D8D008DAE16 /* BadgeUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CD6D6AB24090D8D008DAE16 /* BadgeUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD6D6A424090D8D008DAE16 /* BadgeUI.framework */; };
+		1CD6D6AC24090D8D008DAE16 /* BadgeUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD6D6A424090D8D008DAE16 /* BadgeUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1CD6D6B124090DB6008DAE16 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2CAAAF2403D652004F6AE0 /* Badge.swift */; };
+		1CD6D6B224090DB6008DAE16 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2CAAB12403D7F0004F6AE0 /* HexagonParameters.swift */; };
+		1CD6D6B324090DC5008DAE16 /* Badge.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1C2CAAAF2403D652004F6AE0 /* Badge.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CD6D6A924090D8D008DAE16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C2CAA902403D44F004F6AE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CD6D6A324090D8D008DAE16;
+			remoteInfo = BadgeUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1CD6D68224090860008DAE16 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1CD6D6AC24090D8D008DAE16 /* BadgeUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C2CAA982403D44F004F6AE0 /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +58,21 @@
 		1C2CAAA92403D451004F6AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C2CAAAF2403D652004F6AE0 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		1C2CAAB12403D7F0004F6AE0 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
+		1CD6D6A424090D8D008DAE16 /* BadgeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BadgeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD6D6A624090D8D008DAE16 /* BadgeUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BadgeUI.h; sourceTree = "<group>"; };
+		1CD6D6A724090D8D008DAE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1C2CAA952403D44F004F6AE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD6D6AB24090D8D008DAE16 /* BadgeUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD6D6A124090D8D008DAE16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				1C2CAA9A2403D44F004F6AE0 /* Drawing */,
+				1CD6D6A524090D8D008DAE16 /* BadgeUI */,
 				1C2CAA992403D44F004F6AE0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				1C2CAA982403D44F004F6AE0 /* Drawing.app */,
+				1CD6D6A424090D8D008DAE16 /* BadgeUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +124,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1CD6D6A524090D8D008DAE16 /* BadgeUI */ = {
+			isa = PBXGroup;
+			children = (
+				1CD6D6A624090D8D008DAE16 /* BadgeUI.h */,
+				1CD6D6A724090D8D008DAE16 /* Info.plist */,
+			);
+			path = BadgeUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1CD6D69F24090D8D008DAE16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD6D6A824090D8D008DAE16 /* BadgeUI.h in Headers */,
+				1CD6D6B324090DC5008DAE16 /* Badge.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1C2CAA972403D44F004F6AE0 /* Drawing */ = {
@@ -91,15 +155,35 @@
 				1C2CAA942403D44F004F6AE0 /* Sources */,
 				1C2CAA952403D44F004F6AE0 /* Frameworks */,
 				1C2CAA962403D44F004F6AE0 /* Resources */,
+				1CD6D68224090860008DAE16 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1CD6D6AA24090D8D008DAE16 /* PBXTargetDependency */,
 			);
 			name = Drawing;
 			productName = DrawingAndAnimation;
 			productReference = 1C2CAA982403D44F004F6AE0 /* Drawing.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1CD6D6A324090D8D008DAE16 /* BadgeUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CD6D6AD24090D8D008DAE16 /* Build configuration list for PBXNativeTarget "BadgeUI" */;
+			buildPhases = (
+				1CD6D69F24090D8D008DAE16 /* Headers */,
+				1CD6D6A024090D8D008DAE16 /* Sources */,
+				1CD6D6A124090D8D008DAE16 /* Frameworks */,
+				1CD6D6A224090D8D008DAE16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BadgeUI;
+			productName = BadgeUI;
+			productReference = 1CD6D6A424090D8D008DAE16 /* BadgeUI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -112,6 +196,9 @@
 				ORGANIZATIONNAME = zjj;
 				TargetAttributes = {
 					1C2CAA972403D44F004F6AE0 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					1CD6D6A324090D8D008DAE16 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -130,6 +217,7 @@
 			projectRoot = "";
 			targets = (
 				1C2CAA972403D44F004F6AE0 /* Drawing */,
+				1CD6D6A324090D8D008DAE16 /* BadgeUI */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +230,13 @@
 				1C2CAAA82403D451004F6AE0 /* LaunchScreen.storyboard in Resources */,
 				1C2CAAA52403D451004F6AE0 /* Preview Assets.xcassets in Resources */,
 				1C2CAAA22403D451004F6AE0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD6D6A224090D8D008DAE16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +255,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1CD6D6A024090D8D008DAE16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD6D6B224090DB6008DAE16 /* HexagonParameters.swift in Sources */,
+				1CD6D6B124090DB6008DAE16 /* Badge.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CD6D6AA24090D8D008DAE16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CD6D6A324090D8D008DAE16 /* BadgeUI */;
+			targetProxy = 1CD6D6A924090D8D008DAE16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1C2CAAA62403D451004F6AE0 /* LaunchScreen.storyboard */ = {
@@ -291,6 +403,7 @@
 		1C2CAAAD2403D451004F6AE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Drawing/Preview Content\"";
@@ -310,6 +423,7 @@
 		1C2CAAAE2403D451004F6AE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Drawing/Preview Content\"";
@@ -323,6 +437,58 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1CD6D6AE24090D8D008DAE16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BadgeUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jam.studio.BadgeUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1CD6D6AF24090D8D008DAE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BadgeUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jam.studio.BadgeUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -343,6 +509,15 @@
 			buildConfigurations = (
 				1C2CAAAD2403D451004F6AE0 /* Debug */,
 				1C2CAAAE2403D451004F6AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CD6D6AD24090D8D008DAE16 /* Build configuration list for PBXNativeTarget "BadgeUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD6D6AE24090D8D008DAE16 /* Debug */,
+				1CD6D6AF24090D8D008DAE16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

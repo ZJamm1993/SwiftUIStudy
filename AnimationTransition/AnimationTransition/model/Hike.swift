@@ -7,18 +7,15 @@ The model for a hike.
 
 import SwiftUI
 
-let hikeData: [Hike] = load("hikeData.json")
+let bundlepath = Bundle.main.path(forResource: "Data", ofType: "bundle")!
+let dataPath = bundlepath.appending("/hikeData.json")
+public let hikeData: [Hike] = load(dataPath)
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     
-    guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
-    else {
-        fatalError("Couldn't find \(filename) in main bundle.")
-    }
-    
     do {
-        data = try Data(contentsOf: file)
+        data = try Data(contentsOf:URL(fileURLWithPath: filename))
     } catch {
         fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
     }
@@ -31,9 +28,9 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
 }
 
-struct Hike: Codable, Hashable, Identifiable {
+public struct Hike: Codable, Hashable, Identifiable {
     var name: String
-    var id: Int
+    public var id: Int
     var distance: Double
     var difficulty: Int
     var observations: [Observation]

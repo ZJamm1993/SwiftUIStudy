@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Badge: View {
+public struct Badge: View {
     static let rotationCount = 9
     var badgeSymbols: some View {
         ForEach(0..<Self.rotationCount) { i in
@@ -16,7 +16,7 @@ struct Badge: View {
         }
         
     }
-    var body: some View {
+    public var body: some View {
         ZStack {
             BadgeBackground()
             GeometryReader { geo in
@@ -27,6 +27,9 @@ struct Badge: View {
             
         }
         .scaledToFit()
+    }
+    public init() {
+        
     }
 }
 
