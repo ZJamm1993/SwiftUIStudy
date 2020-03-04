@@ -74,6 +74,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C65D519240F9641009038A2 /* Landmark */ = {
+			isa = PBXGroup;
+			children = (
+				1CD6D6312408F914008DAE16 /* model */,
+				1CA4213F2403642F0054CA44 /* LandmarkDetailView.swift */,
+				1CA4216C240378060054CA44 /* LandmarkListView.swift */,
+				1CD6D62F2407B85E008DAE16 /* CategoryHome.swift */,
+				1CD6D6342408F94D008DAE16 /* ProfileHost.swift */,
+			);
+			path = Landmark;
+			sourceTree = "<group>";
+		};
 		1CA4212F2403642F0054CA44 = {
 			isa = PBXGroup;
 			children = (
@@ -94,13 +106,9 @@
 		1CA4213A2403642F0054CA44 /* UISwift */ = {
 			isa = PBXGroup;
 			children = (
-				1CD6D6312408F914008DAE16 /* model */,
+				1C65D519240F9641009038A2 /* Landmark */,
 				1CA4213B2403642F0054CA44 /* AppDelegate.swift */,
 				1CA4213D2403642F0054CA44 /* SceneDelegate.swift */,
-				1CA4213F2403642F0054CA44 /* LandmarkDetailView.swift */,
-				1CA4216C240378060054CA44 /* LandmarkListView.swift */,
-				1CD6D62F2407B85E008DAE16 /* CategoryHome.swift */,
-				1CD6D6342408F94D008DAE16 /* ProfileHost.swift */,
 				1CA421412403642F0054CA44 /* Assets.xcassets */,
 				1CA421462403642F0054CA44 /* LaunchScreen.storyboard */,
 				1CA421492403642F0054CA44 /* Info.plist */,
