@@ -93,10 +93,15 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
+                /*
                 FeaturedLandmarks(landmarks: self.featured)
                     .scaledToFill()
                     .frame(height: 200)
                     .clipped()
+                    .listRowInsets(EdgeInsets())
+ */
+                PageView(features.map { FeatureCard(landmark: $0) })
+                    .frame(height:200)
                     .listRowInsets(EdgeInsets())
                 ForEach(categories.keys.sorted(), id:\.self) {
                     cateName in
