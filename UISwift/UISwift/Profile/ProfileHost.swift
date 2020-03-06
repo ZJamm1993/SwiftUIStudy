@@ -7,8 +7,6 @@
 //
 
 import SwiftUI
-import BadgeUI
-import HikeUI
 
 struct HikeBadge: View {
     var name: String
@@ -59,17 +57,19 @@ struct ProfileSummary: View {
                             .hueRotation(Angle(degrees: 45))
                     }
                 }
-                .frame(height: 140)
             }
             VStack(alignment: .leading) {
                 Text("Recent Hikes")
                     .font(.headline)
-                    .frame(height: 30)
-
                 HikeView(hike: hikeData[0])
             }
-            Spacer()
         }
+    }
+}
+
+struct ProfileSummary_Previews: PreviewProvider {
+    static var previews: some View {
+        ProfileSummary(profile: Profile.default)
     }
 }
 

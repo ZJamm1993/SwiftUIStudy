@@ -100,8 +100,10 @@ struct CategoryHome: View {
                     .clipped()
                     .listRowInsets(EdgeInsets())
  */
-                PageView(features.map { FeatureCard(landmark: $0) })
-                    .frame(height:200)
+                PageView(features.map {
+                        FeatureCard(landmark: $0)
+                     })
+                    .aspectRatio(1.2, contentMode: .fill)
                     .listRowInsets(EdgeInsets())
                 ForEach(categories.keys.sorted(), id:\.self) {
                     cateName in

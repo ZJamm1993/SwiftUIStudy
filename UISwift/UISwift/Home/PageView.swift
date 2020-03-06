@@ -137,19 +137,26 @@ struct FeatureCard: View {
     var landmark: Landmark
     
     var body: some View {
-        ZStack {
-            landmark.image
-                .resizable()
-            HStack {
-                VStack(alignment: .leading) {
-                    Spacer()
-                    Text(landmark.name)
-                        .font(.title)
-                        .bold()
-                    Text(landmark.park)
-                }.padding()
-                Spacer()
+        ZStack(alignment: .bottomLeading) {
+            GeometryReader { geo in
+                self.landmark.image
+                    .resizable().scaledToFill()
             }
+            // 用一个GeometryReader就能实现裁剪的image？
+            
+            VStack(alignment: .leading) {
+                Text(landmark.name)
+                    .font(.title)
+                    .bold()
+                Text(landmark.park)
+            }.padding()
         }.foregroundColor(.white)
+    }
+}
+
+struct FeatureCard_Preview: PreviewProvider {
+    static var previews: some View {
+        FeatureCard(landmark: landmarkData[3])
+            .previewLayout(.fixed(width: 300, height: 200))
     }
 }
